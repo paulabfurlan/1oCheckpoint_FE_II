@@ -1,0 +1,125 @@
+/* RESET */
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+/* Header */
+
+body{
+    background-color:#EEE6CE;
+    max-width: 1600px  ; 
+}
+
+header{
+    background-color: #313552;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+header > a{
+    color: #EEE6CE;
+    text-decoration: none;
+}
+
+    li > a{
+    color: #EEE6CE;
+    text-decoration: none;
+}
+
+.logo{
+    font-family: 'Syne Mono', monospace;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li:hover{
+    background-color: #B8405E;
+    border-radius: 5px;
+}
+
+.menu li:nth-child(3){
+    border-bottom: 5px solid  #B8405E ;
+}
+
+
+/*Principal*/
+h2{
+    text-align: center;
+    margin: 40px 0 40px 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+
+.principal{
+    height: 400px;
+}
+
+
+/* FOOTER */
+
+.redes{
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+
+}
+
+.redes-sociais{
+    /*background-color: #313552;*/
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(25deg, rgba(2,0,36,1) 0%, rgba(49,53,82,1) 52%, rgba(184,64,94,1) 100%);
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 480px){
+  
+    header{
+        width: 479px;
+        padding: 80px;
+        margin: 0 auto;
+    }
+    .logo{
+        display: none;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    h2{
+        font-size: 35px;
+    }
+
+}
+
+@media (min-width: 769px){
+    body{
+        width: 100%;
+    }
+} 

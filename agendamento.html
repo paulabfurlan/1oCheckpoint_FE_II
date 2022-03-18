@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Agendamento</title>
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <a class="logo" href="">DH Barbearia</a>
+        <!-- navegação -->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Agendamento</a></li>
+                <li><a href="barbeiros.html">Barbeiros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Agende seu atendimento conosco</h2>
+
+    <div class="principal">
+        <fieldset class="formulario">
+            <legend>Agendamento de Serviço</legend>
+            <form class="formAgendamento">
+                <p class="parag">Nome:</p>
+                <input type="text" name="name" placeholder="Digite seu nome" id="txtNome">
+                <p class="parag">Telefone para contato:</p>
+                <input type="tel" name="telefone" placeholder="Digite seu telefone" id="txtTel">
+                <p class="parag"></p>
+                <label for="selBarbeiros">Escolha um barbeiro:</label>
+                <p></p>
+                <select name="selBarbeiros" id="selBarbeiros">
+                    <option value="Jaiana">Jaiana</option>
+                    <option value="Paula">Paula</option>
+                    <option value="Victor">Victor</option>
+                    <option value="William">William</option>
+                </select>
+                <p class="parag">Data e hora:</p>
+                <input type="date" name="data" placeholder="Data dd/mm/yyyy" id="txtData">
+                <p class="parag"></p>
+                <input type="time" name="hora" placeholder="Hora hh:mm" id="txtHora">
+                <p class="parag">Foto de referência para o serviço:</p>
+                <input type="url" name="foto" placeholder="Cole a URL da foto aqui" id="txtFoto">
+                <p class="parag"></p>
+                <div class="buttons">
+                    <button type="reset" id="btnReset">Limpar Dados</button>
+                    <button type="submit" id="btnAgendar">Agendar</button>
+                </div>
+            </form>
+        </fieldset>
+
+        <div id="cards"></div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <ul class="redes-sociais">
+            <li><a href=""><img class="redes" src="img/instagram.png" alt=""></a></li>
+            <li><a href=""><img class="redes" src="img/facebook.png" alt=""></a></li>
+            <li><a href=""><img class="redes" src="img/youtube.png" alt=""></a></li>
+        </ul>
+    </footer>
+    
+    <script src="script/agendamento.js"></script>
+</body>
+</html>

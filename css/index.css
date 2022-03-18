@@ -1,0 +1,242 @@
+/* RESET */
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+
+/* PARALLAX */
+
+.parallax{
+  
+    height: 480px;
+    opacity: 0.7;
+    background-repeat: no-repeat; /* Para ela não repetir */
+    background-size: cover; /* para ela ocupar toda a tela */
+    background-position: center;
+    background-attachment: fixed; /* Efeito paralax */
+    text-transform: uppercase;
+    
+    }
+    
+     .parallax{
+    background-image: url(../img/stock-photo-barber-tools-wooden-shelf-mirror.jpg);
+    position: relative;
+    
+    }
+
+    /* EDIÇÃO */
+
+body{
+    background-color:#EEE6CE;
+}
+
+header{
+background-color: #313552;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px;
+flex-wrap: wrap;
+
+}
+
+header > a{
+    color: #EEE6CE;
+    text-decoration: none;
+   }
+
+ li > a{
+    color: #EEE6CE;
+    text-decoration: none;
+   }
+
+.logo{
+    font-family: 'Syne Mono', monospace;
+
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li:hover{
+background-color: #B8405E;
+border-radius: 5px;
+}
+
+.menu li:nth-child(1){
+    border-bottom: 5px solid  #B8405E ;
+
+}
+
+
+/* CARD SERVIÇOS */
+
+h2{
+    text-align: center;
+    margin: 40px 0 40px 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+.servicos{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+}
+
+.texto{
+    background-color: #B8405E;
+    height: 130px;
+    margin-top: -65px;
+    
+}
+
+/* .div-serv:hover{
+    background-color: #b8405e81;
+    padding: 2px 16px;
+} */
+
+.texto > p, h5{
+    text-align: center;
+    padding: 10px;
+}
+
+.texto > h5{
+    margin-top: 60px;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.div-serv > img{
+    width: 300px;
+    height: 200px;
+    margin-top: 60px;
+}
+
+.div-serv > img:hover{
+    border-top: 9px solid  #2EB086 ;
+ }
+
+/* MAPA */
+.mapa{
+	padding: 3em 0;
+    background: #2EB086 ; /* Para fazer gradiente */
+    
+
+}
+
+.mapa-conteudo{
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 4px 4px 4px 4px #313552 ;
+
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+/* FOOTER */
+
+.redes{
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+
+}
+
+.redes-sociais{
+    /*background-color: #313552;*/
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(25deg, rgba(2,0,36,1) 0%, rgba(49,53,82,1) 52%, rgba(184,64,94,1) 100%);
+}
+
+
+
+    
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 480px){
+  
+    header{
+        width: 479;
+        padding: 80px;
+        margin: 0 auto;
+    }
+
+    .logo{
+        display: none;
+        
+    }
+
+    .h2{
+        font-size: 10px;
+      
+    }
+
+    /* SERVIÇOS */
+    .servicos{
+       margin: 0 auto;
+    }
+
+    /* MAPA */
+    .mapa > p{
+       font-size: 15px;
+    }
+
+    .mapa-conteudo{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 820px){
+
+ /* SERVIÇOS */
+ .servicos{
+   padding: 30px;
+}
+
+.mapa-conteudo{
+    width: 600px;
+}
+
+}
+
+ @media screen and (max-width: 540px){
+    body{
+        width: 540px;
+    }
+    
+   
+    .servicos{
+        padding: 130px;
+    }
+
+    .mapa-conteudo{
+        width: 490px;
+    }
+} 

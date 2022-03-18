@@ -1,0 +1,272 @@
+/* RESET */
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+/* Header */
+
+body{
+    background-color:#EEE6CE;
+    max-width: 1600px  ; 
+}
+
+header{
+    background-color: #313552;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+header > a{
+    color: #EEE6CE;
+    text-decoration: none;
+}
+
+    li > a{
+    color: #EEE6CE;
+    text-decoration: none;
+}
+
+.logo{
+    font-family: 'Syne Mono', monospace;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li:hover{
+    background-color: #B8405E;
+    border-radius: 5px;
+}
+
+.menu li:nth-child(2){
+    border-bottom: 5px solid  #B8405E ;
+}
+
+
+/*Principal*/
+h2{
+    text-align: center;
+    margin: 40px 0 40px 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2% 0 2%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+.formulario{
+    width: 30%;
+    height: 430px;
+    border-color: #313552;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.parag{
+    margin-top: 10px;
+    color: #313552;
+}
+form{
+    margin: 0;
+    padding: 0;
+}
+form > select{
+    width: 97%;
+    height: 28px;
+    border-radius: 5px;
+    border-color: #313552;
+    border-width: 2px;
+}
+form > input{
+    width: 95%;
+    height: 20px;
+    border-radius: 5px;
+    border-color: #313552;
+}
+#txtData{
+    width: 96%;
+    height: 25px;
+}
+#txtHora{
+    width: 96%;
+    height: 25px;
+}
+fieldset > legend{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    color: #313552;
+    font-weight: bold;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    width: 97%;
+    margin: 20px 0 0 0;
+    justify-content:space-between;
+}
+.buttons > button{
+    width: 47%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #B8405E;
+    color: #EEE6CE;
+    cursor: pointer;
+    font-family: 'Pacifico', cursive;
+    font-size: 15px;
+}
+
+#cards{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    margin-top: 12px;
+    height: 384px;
+    background-color: #2EB086;
+    width: 40%;
+    padding: 3%;
+    border: #313552 solid;
+    border-width: 2px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card > img{
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 5px;
+}
+
+.cardTxt{
+    background-color: #B8405E;
+    height: 44%;
+    margin: 3% 0 5% 0;
+    padding: 2%;
+    border: 0;
+    border-radius: 5px;
+}
+
+.cardTxt > p{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+/* FOOTER */
+
+.redes{
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+
+}
+
+.redes-sociais{
+    /*background-color: #313552;*/
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(25deg, rgba(2,0,36,1) 0%, rgba(49,53,82,1) 52%, rgba(184,64,94,1) 100%);
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 480px){
+  
+    header{
+        width: 479px;
+        padding: 80px;
+        margin: 0 auto;
+    }
+    .logo{
+        display: none;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    .formulario{
+        width: 90%;
+    }
+    #cards{
+        width: 97%;
+    }
+    .card{
+        width: 100%;
+        height: 430px;
+    }
+    .cardTxt{
+        height: 41%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    h2{
+        font-size: 35px;
+    }
+
+    .formulario{
+        width: 80%;
+    }
+    #cards{
+        width: 87%;
+    }
+    .card{
+        width: 100%;
+        height: 420px;
+    }
+    .cardTxt{
+        height: 41%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1000px){
+    .formulario{
+        width: 45%;
+    }
+    #cards{
+        width: 45%;
+    }
+    .card{
+        width: 100%;
+        height: 410px;
+    }
+    .cardTxt{
+        height: 41%;
+    }
+}
+
+@media (min-width: 1001px){
+    body{
+        width: 100%;
+    }
+} 
