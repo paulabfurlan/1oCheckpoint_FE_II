@@ -198,30 +198,24 @@ fieldset > legend{
 
 /* RESPONSIVIDADE */
 
-@media (max-width: 480px){
-  
-    header{
-        width: 479px;
-        padding: 80px;
-        margin: 0 auto;
-    }
+@media (min-width: 1px) and (max-width: 480px){
     .logo{
         display: none;
     }
 
     h2{
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .formulario{
-        width: 90%;
+        width: 80%;
     }
     #cards{
-        width: 97%;
+        width: 87%;
     }
     .card{
         width: 100%;
-        height: 430px;
+        height: 420px;
     }
     .cardTxt{
         height: 41%;
