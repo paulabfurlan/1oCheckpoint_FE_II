@@ -9,10 +9,8 @@ let btnReset = document.getElementById('btnReset');
 let btnAgendar = document.getElementById('btnAgendar');
 let divMae = document.getElementById('cards');
 
-
+// Funcao para criar o card a partir dos elementos do formulario
 function criarCard(evento){
-    console.log('Apertou');
-
     evento.preventDefault();
 
     const divCard = document.createElement('div');
@@ -54,5 +52,5 @@ function criarCard(evento){
     divMae.appendChild(divCard);
 }
 
-
+// Evento de apertar o botao de submit
 btnAgendar.addEventListener('click', criarCard);
